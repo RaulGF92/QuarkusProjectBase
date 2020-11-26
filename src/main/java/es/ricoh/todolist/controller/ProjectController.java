@@ -2,6 +2,7 @@ package es.ricoh.todolist.controller;
 
 import java.util.ArrayList;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -12,10 +13,11 @@ import es.ricoh.todolist.controller.dto.response.ResponseProject;
 import es.ricoh.todolist.controller.dto.response.Responses;
 
 @Path("/projects")
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_JSON)
 public class ProjectController extends Controller {
 
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
     public Response getProjects() {
     	ArrayList<ResponseProject> projects = new ArrayList<ResponseProject>();
         Responses<ResponseProject> responses = Responses.ok(projects);
