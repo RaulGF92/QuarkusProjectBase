@@ -1,4 +1,4 @@
-package es.ricoh.todolist.controller.dto;
+package es.ricoh.todolist.controller.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package es.ricoh.todolist;
+package es.ricoh.todolist.controller.application;
 
 import io.quarkus.test.junit.NativeImageTest;
 

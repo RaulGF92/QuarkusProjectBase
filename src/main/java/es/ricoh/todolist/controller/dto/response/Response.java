@@ -1,4 +1,4 @@
-package es.ricoh.todolist.controller.dto;
+package es.ricoh.todolist.controller.dto.response;
 
 import es.ricoh.todolist.commun.Constants;
 import lombok.AllArgsConstructor;

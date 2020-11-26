@@ -13,7 +13,7 @@ public class ControllerExceptionHandler implements ExceptionMapper<ControllerExc
 	@Override
 	public Response toResponse(ControllerException exception) {
 		return Response.status(Status.BAD_REQUEST)
-				.entity(es.ricoh.todolist.controller.dto.Response.ko(exception.getMessage())).build();  
+				.entity(es.ricoh.todolist.controller.dto.response.Response.ko(exception.getMessage())).build();  
 	}
 
 }

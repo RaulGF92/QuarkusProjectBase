@@ -14,7 +14,7 @@ public class BusinessExceptionHandler implements ExceptionMapper<BusinessExcepti
 	@Override
 	public Response toResponse(BusinessException exception) {
 		return Response.status(Status.INTERNAL_SERVER_ERROR)
-				.entity(es.ricoh.todolist.controller.dto.Response.ko(exception.getMessage())).build();  
+				.entity(es.ricoh.todolist.controller.dto.response.Response.ko(exception.getMessage())).build();  
 	}
 
 }

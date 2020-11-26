@@ -14,7 +14,7 @@ public class RuntimeExceptionHandler implements ExceptionMapper<RuntimeException
 	@Override
 	public Response toResponse(RuntimeException exception) {
 		return Response.status(Status.INTERNAL_SERVER_ERROR)
-				.entity(es.ricoh.todolist.controller.dto.Response.ko(exception.getMessage())).build();  
+				.entity(es.ricoh.todolist.controller.dto.response.Response.ko(exception.getMessage())).build();  
 	}
 
 }

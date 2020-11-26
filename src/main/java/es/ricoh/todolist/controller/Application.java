@@ -1,4 +1,4 @@
-package es.ricoh.todolist;
+package es.ricoh.todolist.controller;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
