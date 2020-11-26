@@ -18,4 +18,10 @@ public class ProjectBusinessImpl implements ProjectBusiness {
 		return null;
 	}
 
+	@Override
+	public String createProject(ProjectEntity projectEntity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
