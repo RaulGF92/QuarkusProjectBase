@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.hamcrest.collection.IsArray;
 import org.junit.jupiter.api.Test;
 
+import es.ricoh.todolist.controller.dto.response.ResponseProject;
+import es.ricoh.todolist.controller.dto.response.Responses;
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
@@ -24,7 +26,8 @@ class ProjectControllerTest {
 				.statusCode(200)
 				.extract();
 		
-		list = response.as(List<ResponseProject>);
+		Responses<ResponseProject> responses = response.as(Responses.class);
+		assertNotNull(responses);
 	}
 
 }

@@ -3,8 +3,12 @@ package es.ricoh.todolist.controller.dto.response;
 import es.ricoh.todolist.commun.Constants;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
+@SuperBuilder
+@NoArgsConstructor
 @AllArgsConstructor
 @Getter@Setter
 public class Response {
