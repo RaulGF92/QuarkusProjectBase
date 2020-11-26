@@ -11,6 +11,7 @@ public class ResponseProject extends Response {
 
 	private String code;
 	private String name;
+	private String id;
 
 	public static ResponseProject from(ProjectEntity projectEntity) {
 		return ResponseProject.builder().build();
