@@ -15,7 +15,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import es.ricoh.todolist.business.ProjectBusiness;
+import es.ricoh.todolist.business.TODOBusiness;
 import es.ricoh.todolist.controller.dto.request.RequestProject;
 import es.ricoh.todolist.controller.dto.response.ResponseProject;
 import es.ricoh.todolist.controller.dto.response.Responses;
@@ -29,7 +29,7 @@ import lombok.Setter;
 public class ProjectController extends Controller {
 
 	@Inject
-	ProjectBusiness business;
+	TODOBusiness business;
 	
     @GET
     public Response getProjects() {

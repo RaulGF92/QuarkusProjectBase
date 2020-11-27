@@ -6,7 +6,7 @@ import javax.inject.Inject;
 
 import org.junit.jupiter.api.Test;
 
-import es.ricoh.todolist.business.ProjectBusiness;
+import es.ricoh.todolist.business.TODOBusiness;
 import es.ricoh.todolist.controller.ProjectController;
 import es.ricoh.todolist.controller.dto.response.ResponseProject;
 import es.ricoh.todolist.controller.dto.response.Responses;
@@ -34,8 +34,8 @@ class ProjectControllerTest {
 	@Test
 	void test() {
 		
-		ProjectBusiness previousBusiness = controller.getBusiness();
-		ProjectBusiness businessMock = mock(ProjectBusiness.class);
+		TODOBusiness previousBusiness = controller.getBusiness();
+		TODOBusiness businessMock = mock(TODOBusiness.class);
 		
 		when(businessMock.getAllProjects())
 			.thenReturn(Collections.emptyList());
